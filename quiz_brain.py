@@ -1,6 +1,3 @@
-import os
-
-
 class QuizBrain:
     def __init__(self, q_list):
         self.question_list = q_list
@@ -8,16 +5,7 @@ class QuizBrain:
         self.question_number = 0
 
     def still_has_questions(self):
-        # if self.question_number < len(self.question_list):
-        #     return True
-        # else:
-        #     return False
         return self.question_number < len(self.question_list)
-        # This code equal all code above
-
-    # TODO: Player wrong answer count and decide continue or finis game
-    def answer_count(self):
-        pass
 
     def next_question(self):
         current_question = self.question_list[self.question_number]
